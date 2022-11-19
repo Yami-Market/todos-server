@@ -9,7 +9,7 @@ please use Python 3.10+. If you still get any error, please open an issue.
 
 ```bash
 # Download the source code
-git clone
+git clone git@github.com:Yami-Market/todos-server.git
 
 # Create a Python 3.10+ virtual environment
 python3 -m venv venv
