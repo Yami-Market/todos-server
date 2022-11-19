@@ -9,8 +9,8 @@ readme = "README.md"
 python = "^3.10"
 flask = "^2.2.2"
 python-dotenv = "^0.21.0"
-psycopg2 = "^2.9.5"
 flask-cors = "^3.0.10"
+psycopg2-binary = "^2.9.5"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^5.0.4"
