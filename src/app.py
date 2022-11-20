@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 load_dotenv()
 
-FLASK_SECRET_KEY = os.getenv('FLASK_SECRET_KEY') or 'dev'
+FLASK_SECRET_KEY = os.getenv('FLASK_SECRET_KEY') or 'secret'
 DB_HOST = os.getenv('DB_HOST')
 DB_NAME = os.getenv('DB_NAME')
 DB_USERNAME = os.getenv('DB_USERNAME')
