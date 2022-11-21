@@ -66,6 +66,11 @@ def todos():
     return todos
 
 
+@app.route('/v1/test2')
+def test2():
+    return 'Test 2'
+
+
 @app.route('/v1/todos/<int:todo_id>')
 def get_todo_by_id(todo_id: int):
     conn = get_db_connection()
