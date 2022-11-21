@@ -49,6 +49,11 @@ def v1_index():
     return 'Todos API v1'
 
 
+@app.route('/test1')
+def test1():
+    return 'test1'
+
+
 # TODO: Add HTTP Status Code
 @app.route('/v1/debug')
 def v1_debug():
@@ -64,6 +69,11 @@ def todos():
     cur.close()
     conn.close()
     return todos
+
+
+@app.route('/v1/test2')
+def test2():
+    return 'Test 2'
 
 
 @app.route('/v1/todos/<int:todo_id>')
