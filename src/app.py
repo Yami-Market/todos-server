@@ -64,7 +64,7 @@ def v1_debug():
 def todos():
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute('SELECT * FROM todos')  # comment
+    cur.execute('SELECT * FROM todos')
     todos = cur.fetchall()
     cur.close()
     conn.close()
