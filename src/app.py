@@ -52,14 +52,14 @@ def v1_index():
 # TODO: Add HTTP Status Code
 @app.route('/v1/debug')
 def v1_debug():
-    return 'Todos Market API v1 Debug'
+    return 'Todos Market API v1 Debug', 100
 
 
 @app.route('/v1/todos')
 def todos():
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute('SELECT * FROM todos')
+    cur.execute('SELECT * FROM todos')  # comment
     todos = cur.fetchall()
     cur.close()
     conn.close()
